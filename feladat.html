@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="feladat.css">
+     
+</head>
+
+<body>
+
+    <div class="top">
+    <p>hosszúság: 10.4</p>
+    <p>szélesség: 13.5</p>
+    <p>magasság: 8.2</p>
+    
+        
+        <p id="felszin"></p>
+        <p id="terfogat"></p>
+    </div>
+    <div>
+        <p id="remainingSeconds"></p>
+    </div>
+
+    <div>
+        <p id="bmi"></p>
+    </div>
+
+    <div>
+        
+        <p>pontszám<input type="number" id="score" name="score"></p>
+        <button onclick="calculateGrade()">Calculate</button>
+    
+        <p id="grade"></p>
+    </div>
+    <div>
+    <input type="number" id="year" name="year">
+    <button onclick="checkLeapYear()">szökőév?</button>
+        <p id="eredmeny"></p>
+    </div>
+
+    <div>
+    <label for="player1">Player 1 (1: Rock, 2: Paper, 3: Scissors):</label>
+    <input type="number" id="player1" name="player1" min="1" max="3">
+    <br><br>
+    <label for="player2">Player 2 (1: Rock, 2: Paper, 3: Scissors):</label>
+    <input type="number" id="player2" name="player2" min="1" max="3">
+    <br><br>
+    <button onclick="gyoztes()">győztes?</button>
+    
+        <p id="nyertes"></p>
+    </div>
+
+    <div id="output"></div>
+<div>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" min="0">
+    <button onclick="calculateFactorial()">Calculate</button>
+    <p id="szam"></p>
+</div>
+<div>
+     <label for="numberInput">Enter a number:</label>
+    <input type="text" id="numberInput">
+    <button onclick="calculateAverageOfDigits()">Calculate</button>
+    <p id="result"></p></div>
+
+    <div>
+        <label for="stringInput">Enter a string:</label>
+    <input type="text" id="stringInput">
+    <button onclick="printLetters()">Print Letters</button>
+    <p id="betu"></p>
+    </div>
+
+<script src="feladat.js"></script> 
+</body>
+</html>
